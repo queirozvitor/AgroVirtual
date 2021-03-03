@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <item
+        android:id="@+id/iconPesquisar"
+        android:icon="@drawable/ic_search_black_24dp"
+        android:title="Pesquisar"
+        app:showAsAction="ifRoom"
+        ></item>
+
+    <item
+        android:id="@+id/iconSairComprador"
+        android:icon="@drawable/ic_exit_24dp"
+        android:title="Sair"
+        app:showAsAction="ifRoom"
+        ></item>
+
+</menu>

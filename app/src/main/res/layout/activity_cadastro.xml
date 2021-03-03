@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundteste"
+    tools:context=".Activity.cadastro">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/toolbar"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
+            android:text="Bem-vindo usuário!"
+            android:textColor="#0B610B"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15dp"
+            android:textColor="#0B610B"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="monospace"
+            android:text="Informe seus dados pessoais." />
+
+        <EditText
+            android:id="@+id/cadastrarEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="#A8A1A1"
+            android:background="@drawable/caixadetexto"
+            android:fontFamily="sans-serif"
+            android:textColor="@android:color/black"
+            android:hint="Email "
+            android:inputType="textWebEmailAddress"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/cadastrarSenha"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/caixadetexto"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="#A8A1A1"
+            android:fontFamily="sans-serif"
+            android:hint="Senha "
+            android:inputType="textPassword"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/cadastrarNome"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/caixadetexto"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:textColorHint="#A8A1A1"
+            android:fontFamily="sans-serif"
+            android:hint="Nome"
+            android:inputType="text"
+            android:paddingLeft="10dp" />
+
+        <EditText
+            android:id="@+id/cadastrarCidade"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/caixadetexto"
+            android:textColor="@android:color/black"
+            android:layout_marginRight="10dp"
+            android:textColorHint="#A8A1A1"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif"
+            android:hint="Cidade"
+            android:inputType="text"
+            android:paddingLeft="10dp" />
+
+
+        <EditText
+            android:id="@+id/cadastrarTelefone"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/caixadetexto"
+            android:textColor="@android:color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="sans-serif"
+            android:hint="Telefone"
+            android:textColorHint="#A8A1A1"
+            android:inputType="number"
+            android:paddingLeft="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                android:layout_height="wrap_content">
+                <RadioGroup
+                    android:id="@+id/cadastrarradiogroup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:scrollbarSize="10dp">
+
+                    <RadioButton
+                        android:id="@+id/cadastrarbotaovendedor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:checked="true"
+                        android:fontFamily="sans-serif"
+                        android:onClick="checkbutton"
+                        android:text="Vendedor"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+
+                    <RadioButton
+                        android:id="@+id/cadastrarbotaocomprador"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif"
+                        android:onClick="checkbutton"
+                        android:text="Comprador"
+                        android:textColor="@android:color/black"
+                        android:textSize="20dp" />
+
+        </RadioGroup>
+
+            </LinearLayout>
+
+
+
+
+        <Button
+            android:id="@+id/cadastrarBotao"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/botoes"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="monospace"
+            android:text="Cadastrar"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+
+
+</ScrollView>

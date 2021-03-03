@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/botoesbranco"
+    tools:context=".Activity.VendedorProdutos">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar"/>
+
+        <TextView
+            android:id="@+id/textVendaProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/toolbar"
+            android:layout_marginTop="30dp"
+            android:fontFamily="serif"
+            android:paddingLeft="10dp"
+            android:text="Venda seus produtos!"
+            android:textColor="#0B610B"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textVendaProdutos2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/textVendaProdutos"
+            android:layout_marginBottom="50dp"
+            android:fontFamily="monospace"
+            android:textColor="#0B610B"
+            android:paddingLeft="10dp"
+            android:text="Insira os dados."
+            android:textStyle="bold" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_image"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@id/textVendaProdutos2"
+            android:src="@drawable/iconegaleria" />
+
+        <TextView
+            android:id="@+id/TextInserirImagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profile_image"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="monospace"
+            android:text="Selecione uma imagem"
+            android:textAlignment="center"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/editNomeProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/TextInserirImagem"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/caixadetexto"
+            android:hint="Nome"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editDescricaoProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/editNomeProdutos"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/caixadetexto"
+            android:hint="Descrição"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editPrecoProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/editDescricaoProdutos"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/caixadetexto"
+            android:hint="Preço"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:id="@+id/SpinnerCategoriaProdutos"
+            android:layout_width="200dp"
+            android:layout_height="45dp"
+            android:layout_below="@+id/editPrecoProdutos"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/caixadetexto"
+            android:layout_marginBottom="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/imagemSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_toRightOf="@id/SpinnerCategoriaProdutos"
+            android:layout_below="@id/editPrecoProdutos"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            />
+        <Button
+            android:id="@+id/buttonsalvarProdutos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/SpinnerCategoriaProdutos"
+            android:layout_marginLeft="70dp"
+            android:layout_marginRight="70dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/botoes"
+            android:text="Salvar"
+            android:textColor="@android:color/white" />
+
+
+
+
+
+
+    </RelativeLayout>
+
+</ScrollView>

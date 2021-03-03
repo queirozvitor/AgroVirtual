@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/botoesbranco"
+    android:layout_height="match_parent"
+    tools:context=".Activity.VendedorPrincipal">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/toolbar"/>
+
+        <LinearLayout
+            android:id="@+id/LinearPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginLeft="-10dp"
+            android:layout_marginRight="-10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textPrincipalUsuario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:text="Olá, Vendedor"
+                android:fontFamily="serif"
+                android:paddingLeft="10dp"
+                android:textColor="#0B610B"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/TextPrincipaltexto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textPrincipalUsuario"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="monospace"
+                android:paddingLeft="10dp"
+                android:text="Está na hora de vender seus produtos!"
+                android:textColor="#0B610B"
+                android:textStyle="bold" />
+
+            <include
+                layout="@layout/divisor" />
+
+        </LinearLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/listaProdutosVendedor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/LinearPrincipal"
+            />
+
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingAdicionar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="18dp"
+        android:onClick="abrirProdutos"
+        android:scrollbarSize="20dp"
+        android:src="@drawable/ic_add_produtos_24dp"
+        app:backgroundTint="#FF0000"
+        app:fabSize="normal"
+        app:fab_size="normal"
+        app:maxImageSize="40dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

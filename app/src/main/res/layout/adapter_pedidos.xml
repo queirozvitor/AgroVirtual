@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/textPedidoNomeComprador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Jamilton damasceno"
+            android:textColor="@color/common_google_signin_btn_text_dark_focused"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textPedidoStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="Status"
+            android:layout_marginEnd="50dp"
+            android:textAlignment="textEnd"
+            android:layout_marginBottom="3dp"
+            android:textColor="@color/design_default_color_error"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textPedidoCidade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereço: rua almeida prado, 1300"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textPedidoTelefone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Telefone"
+        android:textSize="16sp" />
+        <TextView
+            android:id="@+id/textPedidoData"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Data: "
+            android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/textPedidoTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Obs: teste"
+        android:textSize="16sp" />
+    <TextView
+        android:id="@+id/textLocalEntrega"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Local da Entrega"
+        android:textSize="16sp"
+        />
+
+    <TextView
+        android:id="@+id/textPedidoItens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1) Filé Cinco Queijos (1 X R$ 16.50)"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <include layout="@layout/divisor" />
+</LinearLayout>
